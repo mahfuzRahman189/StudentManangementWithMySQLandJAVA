@@ -1,5 +1,3 @@
-package MainPackage;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -12,7 +10,7 @@ public class DB {
       public DB(){
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/learning","root","mrm189");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/DataBase_name","root","PASSWORD_of_database");
 			System.out.println("Database Connected");
 		} 
 		catch(Exception e) {
